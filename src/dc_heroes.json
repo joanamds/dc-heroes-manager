@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Superman",
+    "secret_identity": "Clark Kent",
+    "first_appearance":  {
+      "year": 1938,
+      "comic": "Action Comics #1"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Batman",
+    "secret_identity": "Bruce Wayne",
+    "first_appearance":  {
+      "year": 1939,
+      "comic": "Detective Comics #27"
+    }
+  },
+  {
+    "id": 3, 
+    "name": "Robin",
+    "secret_identity": "Dick Grayson", 
+    "first_appearance":  {
+      "year": 1940,
+      "comic": "Detective Comics #38"
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Flash",
+    "secret_identity": "Jay Garrick",
+    "first_appearance":  {
+      "year": 1940,
+      "comic": "Flash Comics #1"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Green Lantern",
+    "secret_identity": "Alan Scott",
+    "first_appearance":  {
+      "year": 1940,
+      "comic": "All-American Comics #16"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Wonder Woman",
+    "secret_identity": "Diana Prince",
+    "first_appearance":  {
+      "year": 1941,
+      "comic": "All Star Comics #8"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Aquaman",
+    "secret_identity": "Arthur Curry",
+    "first_appearance":  {
+      "year": 1941,
+      "comic": "More Fun Comics #73"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Green Arrow",
+    "secret_identity": "Oliver Queen",
+    "first_appearance":  {
+      "year": 1941,
+      "comic": "More Fun Comics #73"
+    }
+  }
+]
