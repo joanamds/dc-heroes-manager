@@ -3,6 +3,7 @@ const app = express();
 const fs = require('./utils/fsUtils');
 const PORT = '3001';
 app.use(express.json());
+const { validateHero } = require('./middlewares/validateHero');
 
 app.get('/heroes', async (_req, res) => {
   const data = await fs.readHeroes();
@@ -18,8 +19,17 @@ app.get('/heroes/:id', async (req, res) => {
   }
 
   return res.status(404).json({ message: "Hero not found!"})
+});
+
+app.post('/heroes', validateHero, async (req, res) => {
+  const data = await fs.readHeroes();
+  const lastId = data.length;
+  const newHero = {id: lastId + 1, ...req.body}
+  data.push(newHero);
+  await fs.writeHeroes(data);
+  return res.status(201).json(newHero);
 })
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
-})
+});

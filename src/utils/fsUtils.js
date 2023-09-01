@@ -9,6 +9,12 @@ const readHeroes = async () => {
   return JSON.parse(heroes)
 }
 
+const writeHeroes = async (data) => {
+  const newHero = await fs.writeFile(filePath, JSON.stringify(data));
+  return newHero;
+}
+
 module.exports = {
-  readHeroes
+  readHeroes,
+  writeHeroes
 }
