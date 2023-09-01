@@ -18,8 +18,8 @@ Para este projeto criamos um CRUD para ler e inserir dados em um arquivo JSON.
 ## Requisitos
 
 - [x] 1. Configuração do ambiente de desenvolvimento, instalação do Node e pacotes;
-- [ ] 2. Criação do método `GET /heroes`;
-- [ ] 3. Criação do método `GET /heroes/:id`;
+- [x] 2. Criação do método `GET /heroes`;
+- [x] 3. Criação do método `GET /heroes/:id`;
 - [ ] 4. Criação do método `POST /heroes`;
 - [ ] 5. Criação do método `PUT /heroes/:id`;
 - [ ] 6. Criação do método `DELETE /heroes/:id`;
