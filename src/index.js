@@ -30,6 +30,31 @@ app.post('/heroes', validateHero, async (req, res) => {
   return res.status(201).json(newHero);
 })
 
+app.put('/heroes/:id', validateHero, async (req, res) => {
+  const { id } = req.params;
+  const data = await fs.readHeroes();
+  const heroIndex = data.findIndex((hero) => hero.id === Number(id));
+  if (heroIndex === -1) {
+    return res.status(404).json({ message: "Hero not found!"})
+  }
+  const updatedHero = {id: Number(id), ...req.body}
+  data[heroIndex] = updatedHero;
+  await fs.writeHeroes(data);
+  return res.status(200).json(updatedHero);
+});
+
+app.delete('/heroes/:id', async (req, res) => {
+  const { id } = req.params;
+  const data = await fs.readHeroes();
+  const heroIndex = data.findIndex((hero) => hero.id === Number(id));
+  if (heroIndex === -1) {
+    return res.status(404).json({ message: "Hero not found!"})
+  }
+  data.splice(heroIndex, 1);
+  await fs.writeHeroes(data);
+  return res.status(204).end();
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 });
