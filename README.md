@@ -1,7 +1,7 @@
 # DC Heroes Manager
 
 <p align="center">
-  <img src="https://github.com/joanamds/dc-heroes-manager/assets/106452876/9866d3ca-6678-4378-b236-d5d1d989b03a" alt="Imagem de Exemplo">
+  <img src="https://github.com/joanamds/dc-heroes-manager/assets/106452876/c200315a-58c7-4682-bcf7-69a5526f22a1" alt="DC logo">
 </p>
 
 Monitoria estruturada de operações de CRUD criando uma API com Node.js.
