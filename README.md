@@ -21,8 +21,8 @@ Para este projeto criamos um CRUD para ler e inserir dados em um arquivo JSON.
 - [x] 2. Criação do método `GET /heroes`;
 - [x] 3. Criação do método `GET /heroes/:id`;
 - [x] 4. Criação do método `POST /heroes`;
-- [ ] 5. Criação do método `PUT /heroes/:id`;
-- [ ] 6. Criação do método `DELETE /heroes/:id`;
+- [x] 5. Criação do método `PUT /heroes/:id`;
+- [x] 6. Criação do método `DELETE /heroes/:id`;
 
 ## Requisito Bônus
 - [ ] 7. Criação do método `GET /heroes/search?q=`
