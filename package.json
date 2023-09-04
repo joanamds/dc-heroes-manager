@@ -1,0 +1,26 @@
+{
+  "name": "dc-heroes-manager",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://github.com/joanamds/dc-heroes-manager/assets/106452876/9866d3ca-6678-4378-b236-d5d1d989b03a\" alt=\"Imagem de Exemplo\"> </p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanamds/dc-heroes-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanamds/dc-heroes-manager/issues"
+  },
+  "homepage": "https://github.com/joanamds/dc-heroes-manager#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
